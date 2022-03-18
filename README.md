@@ -36,3 +36,14 @@ book.set_description("A really good book entitled 'Knitting for dummies'")
 dining_hall.set_item(book)
 ```
 No additional modules are required for the program to run. 
+The "game" file includes 5 classes:
+Room - the room where action takes place, where the items and the characters are located;
+```python
+>>> room = Room('kitchen')
+>>> room.name
+'kitchen'
+```
+Item - usable item that is located in a room and can be taken and used to fight an enemy;
+Character - the parent class of classes enemy and friend. Saves the info about a character that is located in a room and can be interacted with;
+Friend(Character) - a character that you don't have to fight, intstead, friend can give you can item for solving a riddle or sell that item to the player.
+Enemy(Character) - a character that is located in a room, that you have to defeat by fighting with a previously collected item.
