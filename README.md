@@ -35,3 +35,4 @@ book = game.Item("book")
 book.set_description("A really good book entitled 'Knitting for dummies'")
 dining_hall.set_item(book)
 ```
+No additional modules are required for the program to run. 
